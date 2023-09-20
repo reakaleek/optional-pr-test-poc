@@ -1,0 +1,13 @@
+name: e2e
+
+on:
+  pull_request:
+    paths:
+      - "plugin/**"
+
+jobs:
+  e2e:
+    environment: e2e-test
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, World!"
